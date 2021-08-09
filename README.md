@@ -8,7 +8,7 @@ copia de esta licencia.
 Puede descargar el APK de la aplicación desde https://drive.google.com/file/d/1ZJtJBLejPmn4KgQFn8fR9r2jhYDY71zM/view?usp=sharing
 
 Esta aplicación fue un proyecto que realicé en la materia de tópicos avanzados de programación
-en mi quinto semestre de la carrera de Ingeniería en Sistemas Computacionales (Febrero - Julio de 2020).
+en mi cuarto semestre de la carrera de Ingeniería en Sistemas Computacionales (Febrero - Julio de 2020).
 
 Se trata de una aplicación que simula las operaciones de un banco, como lo son depositos, transferencias
 bancarias y llevar un historial de transacciones.
