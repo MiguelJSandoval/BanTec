@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2021, DevMJS. All rights reserved.
+  ~ DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+  ~
+  ~ This code is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This code is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this code.  If not, see <https://www.gnu.org/licenses/>.
+  ~
+  ~ Please contact DevMJS on contact.devmjs@gmail.com if you need
+  ~ additional information or have any questions.
+  -->
+
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation_usu"
+    app:startDestination="@id/nav_inicio_usu">
+
+    <fragment
+        android:id="@+id/nav_inicio_usu"
+        android:name="com.devmjs.bantec.usuario.Inicio.InicioUsuario"
+        android:label="@string/menu_inicio"
+        tools:layout="@layout/fragment_iniciousuario" />
+    <fragment
+        android:id="@+id/ingresardinero"
+        android:name="com.devmjs.bantec.usuario.Ingresar.IngresarDinero"
+        android:label="@string/title_frag_ingresar"
+        tools:layout="@layout/fragment_ingresardinero" />
+    <fragment
+        android:id="@+id/infoUsu"
+        android:name="com.devmjs.bantec.Info"
+        android:label="@string/menu_acercade"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/transferirdinero"
+        android:name="com.devmjs.bantec.usuario.Transferir.Transferir"
+        android:label="@string/frag_transfer"
+        tools:layout="@layout/fragment_transferir" />
+    <fragment
+        android:id="@+id/nav_tarjeta"
+        android:name="com.devmjs.bantec.usuario.Transacciones.Transacciones"
+        android:label="@string/frag_hist"
+        tools:layout="@layout/fragment_transacciones" />
+
+</navigation>

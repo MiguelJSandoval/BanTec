@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2021, DevMJS. All rights reserved.
+  ~ DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+  ~
+  ~ This code is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This code is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this code.  If not, see <https://www.gnu.org/licenses/>.
+  ~
+  ~ Please contact DevMJS on contact.devmjs@gmail.com if you need
+  ~ additional information or have any questions.
+  -->
+
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@android:drawable/btn_star_big_on"
+            android:title="@string/menu_inicio" />
+        <item
+            android:id="@+id/addregs"
+            android:icon="@android:drawable/ic_input_add"
+            android:title="@string/menu_añadir" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/lapiz2"
+            android:title="@string/menu_modificar" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@android:drawable/ic_delete"
+            android:title="@string/menu_eliminar" />
+    </group>
+    <item android:title="@string/menu_info">
+        <menu>
+            <item
+                android:id="@+id/info"
+                android:icon="@drawable/inf"
+                android:title="@string/menu_acercade" />
+        </menu>
+    </item>
+</menu>

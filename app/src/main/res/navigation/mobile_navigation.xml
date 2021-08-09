@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2021, DevMJS. All rights reserved.
+  ~ DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+  ~
+  ~ This code is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This code is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this code.  If not, see <https://www.gnu.org/licenses/>.
+  ~
+  ~ Please contact DevMJS on contact.devmjs@gmail.com if you need
+  ~ additional information or have any questions.
+  -->
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.devmjs.bantec.ui.home.HomeFragment"
+        android:label="@string/menu_inicio"
+        tools:layout="@layout/fragment_home">
+    </fragment>
+
+    <fragment
+        android:id="@+id/addregs"
+        android:name="com.devmjs.bantec.ui.add.addregs"
+        android:label="@string/menu_añadir"
+        tools:layout="@layout/fragment_addregs" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.devmjs.bantec.ui.ModificaRegistro.ModificaFragment"
+        android:label="@string/menu_modificar"
+        tools:layout="@layout/fragment_modifica"/>
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.devmjs.bantec.ui.EliminaRegistro.Eliminar"
+        android:label="@string/menu_eliminar"
+        tools:layout="@layout/fragment_eliminaregistro"/>
+    <fragment
+        android:id="@+id/info"
+        android:name="com.devmjs.bantec.Info"
+        android:label="@string/menu_acercade"
+        tools:layout="@layout/fragment_info"/>
+</navigation>

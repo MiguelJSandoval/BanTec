@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2021, DevMJS. All rights reserved.
+  ~ DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+  ~
+  ~ This code is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This code is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this code.  If not, see <https://www.gnu.org/licenses/>.
+  ~
+  ~ Please contact DevMJS on contact.devmjs@gmail.com if you need
+  ~ additional information or have any questions.
+  -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".usuario.Transferir.Transferir">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".usuario.Ingresar.IngresarDinero">
+
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="280dp"
+            android:layout_height="137dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/transfer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView47"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="@string/transferira"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageView6" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtNomDes"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView47">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtNomDestin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="@string/nombredesti"
+                android:inputType="text"
+                android:maxLength="12"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtNoCuenDes"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtNomDes">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtNoCuenDestin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="@string/noCuentaDesti"
+                android:inputType="number"
+                android:maxLength="18" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txCantTransfer"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtNoCuenDes">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtCantidadDestin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="@string/cantTransfer"
+                android:inputType="number|numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_transferir"
+            android:layout_width="280dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/botonrojo"
+            android:text="@string/transferir"
+            android:textColor="@color/design_default_color_background"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txCantTransfer" />
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_transferir" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

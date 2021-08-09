@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2021, DevMJS. All rights reserved.
+  ~ DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+  ~
+  ~ This code is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This code is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this code.  If not, see <https://www.gnu.org/licenses/>.
+  ~
+  ~ Please contact DevMJS on contact.devmjs@gmail.com if you need
+  ~ additional information or have any questions.
+  -->
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".usuario.Ingresar.IngresarDinero">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".usuario.Ingresar.IngresarDinero">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="162dp"
+            android:layout_height="137dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/depositar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="@string/selecciona_cant"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+        <Button
+            android:id="@+id/continuar"
+            android:layout_width="330dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/botongris"
+            android:text="Continuar"
+            android:textColor="@color/design_default_color_background"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/continuar" />
+
+        <LinearLayout
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView39">
+
+            <ImageButton
+                android:id="@+id/cien"
+                style="@style/MaterialAlertDialog.MaterialComponents.Title.Icon"
+                android:background="@color/design_default_color_background"
+                android:layout_width="100dp"
+                android:layout_height="55dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cien_ini" />
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="15dp"
+                android:layout_height="55dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/doscientos"
+                style="@style/MaterialAlertDialog.MaterialComponents.Title.Icon"
+                android:background="@color/design_default_color_background"
+                android:layout_width="100dp"
+                android:layout_height="55dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/doscientos_ini" />
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="15dp"
+                android:layout_height="55dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/quinientos"
+                style="@style/MaterialAlertDialog.MaterialComponents.Title.Icon"
+                android:background="@color/design_default_color_background"
+                android:layout_width="100dp"
+                android:layout_height="55dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/quinientos_ini" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn1">
+
+            <ImageButton
+                android:id="@+id/mil"
+                style="@style/MaterialAlertDialog.MaterialComponents.Title.Icon"
+                android:background="@color/design_default_color_background"
+                android:layout_width="100dp"
+                android:layout_height="55dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mil_ini" />
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="15dp"
+                android:layout_height="55dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/cincomil"
+                style="@style/MaterialAlertDialog.MaterialComponents.Title.Icon"
+                android:background="@color/design_default_color_background"
+                android:layout_width="100dp"
+                android:layout_height="55dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cincomil_ini" />
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="15dp"
+                android:layout_height="55dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/diezmil"
+                style="@style/MaterialAlertDialog.MaterialComponents.Title.Icon"
+                android:background="@color/design_default_color_background"
+                android:layout_width="100dp"
+                android:layout_height="55dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/diezmil_ini" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2"
+    xmlns:ns2="http://schemas.android.com/tools">
+
+    <style name="Widget.MaterialComponents.MaterialCalendar.HeaderToggleButton1" parent="Widget.AppCompat.ImageButton">
+        <item name="android:background">?attr/actionBarItemBackground1</item>
+        <item name="android:tint">?attr/colorOnPrimary1</item>
+    </style>
+
+    <attr format="reference" name="actionBarItemBackground1"/>
+    <attr format="color" name="colorOnPrimary1"/>
+</resources>

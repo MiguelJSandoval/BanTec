@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2021, DevMJS. All rights reserved.
+  ~ DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+  ~
+  ~ This code is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This code is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this code.  If not, see <https://www.gnu.org/licenses/>.
+  ~
+  ~ Please contact DevMJS on contact.devmjs@gmail.com if you need
+  ~ additional information or have any questions.
+  -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".ConfirmarTransferencia">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="6dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="Confirmar transferencia"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textView53"
+                    android:layout_width="200dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Ingrese sus datos para confirmar esta transferencia"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:gravity="fill"
+                    android:text="Usuario:" />
+
+                <EditText
+                    android:id="@+id/usuConfirmTransfer"
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:maxLength="12"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="Contraseña:" />
+
+                <EditText
+                    android:id="@+id/passConfirmTransac"
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="textPassword"
+                    android:maxLength="16"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/btn_cancel_transfer"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/boton"
+                    android:text="Cancelar"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="fill" />
+
+                <Button
+                    android:id="@+id/btn_aceptar_transfer"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/boton"
+                    android:text="Aceptar"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/textView49"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
