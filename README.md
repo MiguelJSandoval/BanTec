@@ -5,8 +5,6 @@ Este proyecto está bajo la licencia General Public License V. 3.0 la cual se en
 este proyecto, o si lo prefiere puede dirigirse a https://www.gnu.org/licenses/ para obtener una 
 copia de esta licencia.
 
-Puede descargar el APK de la aplicación desde https://drive.google.com/file/d/1ZJtJBLejPmn4KgQFn8fR9r2jhYDY71zM/view?usp=sharing
-
 Esta aplicación fue un proyecto que realicé en la materia de tópicos avanzados de programación
 en mi cuarto semestre de la carrera de Ingeniería en Sistemas Computacionales (Febrero - Julio de 2020).
 
